@@ -1,0 +1,30 @@
+<% include partials/header.ejs %> 
+
+
+<div class="ui divided items segment" id="buy">
+  <div class="item">
+    <div class="image">
+      <img src="<%=result.img%>">
+    </div>
+    <div class="content">
+      <a class="header"><%=result.title%></a>
+      <div class="description">
+        <p><%-result.body%></p>
+      </div>
+      <div class="extra">
+        <a href="/blogs/<%=result._id%>/edit" class="ui basic orange button">edit</a>
+        <div class="ui right floated primary button">
+          Buy
+          <i class="right chevron icon"></i>
+        </div>
+        <div class="ui label"><%=result.date.toDateString()%></div>
+      </div>
+    </div>
+  </div>
+  <form action="/blogs/<%=result._id%>?_method=DELETE" method="POST">
+    <button class="ui basic red button">Delete</button>
+  </form>
+  </div>
+  
+  
+  <% include partials/footer.ejs %> 

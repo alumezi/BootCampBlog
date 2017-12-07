@@ -1,0 +1,32 @@
+body{
+    padding: 5em;
+}
+
+i.icon{
+    font-size: 2em;
+}
+
+.regulated{
+    width: 60em;
+    margin:5em auto;
+    border:3px solid #EEEEEE;
+    padding:2em;
+    border-radius: 5px;
+}
+#fsepe{
+    margin-bottom:18px;
+}
+
+footer{
+    margin-top:22em;
+}
+
+
+
+#buy{
+    width:80%;
+    margin:10em auto;
+}
+p{
+    margin:4em;
+}

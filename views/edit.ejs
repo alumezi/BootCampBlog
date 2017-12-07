@@ -1,0 +1,40 @@
+<% include partials/header.ejs %>
+
+
+<div class="ui form regulated">
+<h1 class="ui dividing header">Edit: <%=result.title%></h1>    
+<form action="/blogs/<%=result._id%>?_method=PUT" method="POST" class="field">
+      <div class="field">
+            <label>Edit Name and Img</label>
+            <div class="two fields">
+                  <div class="field">
+                        <input type="text" name="blog[title]" placeholder="Title" value="<%=result.title%>">
+                  </div>
+                  <div class="field">
+                        <input type="text" name="blog[img]" placeholder="Url of Img" value="<%=result.img%>">
+                  </div>
+            </div>
+      </div>
+    
+    <div id="fsepe">
+        <label>Pershkrimi</label>
+        <textarea rows="5" type="text" name="blog[body]" ><%=result.body%></textarea>
+    </div>
+    
+    <button class="ui submit violet button">EDIT</button>
+    
+</form>
+<a href="/blogs">Kthehu</a>
+</div>
+
+
+
+
+
+<% include partials/footer.ejs %>
+
+
+
+  
+  
+     
